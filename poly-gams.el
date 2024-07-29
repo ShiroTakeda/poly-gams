@@ -5,8 +5,8 @@
 ;; Copyright (C) Shiro Takeda
 ;; Version: 0.9
 ;; First created: 2022-06-25
-;; Package-Requires: ((emacs "25") (polymode "0.2.2"))
-;; URL:
+;; Package-Requires: ((emacs "25") (polymode "0.2.2") (gams-mode "6.12"))
+;; URL: https://github.com/ShiroTakeda/poly-gams
 ;; Keywords: languages, multi-modes, GAMS
 ;;
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -39,9 +39,8 @@
 ;;
 ;;; Code:
 
-(eval-and-compile
-  (require 'gams-mode)
-  (require 'polymode))
+(require 'gams-mode)
+(require 'polymode)
 
 (define-hostmode poly-gams-hostmode
   :mode 'gams-mode)
