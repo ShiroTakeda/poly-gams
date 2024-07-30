@@ -1,0 +1,41 @@
+* poly-gams.el
+
+`poly-gams.el` is an Emacs package that provides polymode support for GAMS (General Algebraic Modeling System), allowing for embedded Python and YAML code blocks within GAMS files. This package leverages `polymode` to enable seamless multi-mode editing.
+
+** Features
+- **GAMS Mode**: Syntax highlighting and editing support for GAMS code.
+- **Embedded Python**: Syntax highlighting and editing support for Python code blocks embedded within GAMS files.
+- **Embedded YAML**: Syntax highlighting and editing support for YAML code blocks embedded within GAMS files and used by GAMS Connect.
+
+** Installation
+
+This package is not yet available in MELPA, so you have to install it from source. This can be done as follows by adding the following to your =init.el= (with emacs >=29)
+#+begin_src emacs-lisp
+(unless (package-installed-p poly-gams)
+  (package-vc-install
+   '(poly-gams :url "https://github.com/ShiroTakeda/poly-gams")))
+(use-package poly-gams)
+#+end_src
+
+
+** Usage
+
+Once installed, `poly-gams` will automatically activate for files with the `.gms` extension.
+
+*** Screenshot of code blocks with =poly-gams=
+
+*** Keybindings
+
+`poly-gams` inherits keybindings from `polymode`, `gams-mode`, `python-mode`, and `yaml-mode`. Refer to the respective mode documentation for more information.
+
+** Customization
+
+Currently, `poly-gams` does not expose customizable variables. The package is designed to work out of the box for most use cases.
+
+** Contributing
+
+Contributions are welcome! If you find a bug or have a feature request, please open an issue on the GitHub repository. Pull requests are also appreciated.
+
+** License
+
+This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
