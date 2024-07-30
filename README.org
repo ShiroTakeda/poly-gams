@@ -1,11 +1,11 @@
-* poly-gams.el
+* poly-gams
 
-`poly-gams.el` is an Emacs package that provides polymode support for GAMS (General Algebraic Modeling System), allowing for embedded Python and YAML code blocks within GAMS files. This package leverages `polymode` to enable seamless multi-mode editing.
+=poly-gams.el= is an Emacs package that provides polymode support for GAMS (General Algebraic Modeling System), allowing for embedded Python and YAML code blocks within GAMS files. This package leverages =polymode= to enable seamless multi-mode editing.
 
 ** Features
-- **GAMS Mode**: Syntax highlighting and editing support for GAMS code.
-- **Embedded Python**: Syntax highlighting and editing support for Python code blocks embedded within GAMS files.
-- **Embedded YAML**: Syntax highlighting and editing support for YAML code blocks embedded within GAMS files and used by GAMS Connect.
+- *GAMS Mode*: Syntax highlighting and editing support for GAMS code.
+- *Embedded Python*: Syntax highlighting and editing support for Python code blocks embedded within GAMS files.
+- *Embedded YAML*: Syntax highlighting and editing support for YAML code blocks embedded within GAMS files and used by GAMS Connect.
 
 ** Installation
 
@@ -20,17 +20,17 @@ This package is not yet available in MELPA, so you have to install it from sourc
 
 ** Usage
 
-Once installed, `poly-gams` will automatically activate for files with the `.gms` extension.
+Once installed, =poly-gams= will automatically activate for files with the =.gms= extension.
 
 *** Screenshot of code blocks with =poly-gams=
 
 *** Keybindings
 
-`poly-gams` inherits keybindings from `polymode`, `gams-mode`, `python-mode`, and `yaml-mode`. Refer to the respective mode documentation for more information.
+=poly-gams= inherits keybindings from =polymode=, =gams-mode=, =python-mode=, and =yaml-mode=. Refer to the respective mode documentation for more information.
 
 ** Customization
 
-Currently, `poly-gams` does not expose customizable variables. The package is designed to work out of the box for most use cases.
+Currently, =poly-gams= does not expose customizable variables. The package is designed to work out of the box for most use cases.
 
 ** Contributing
 
