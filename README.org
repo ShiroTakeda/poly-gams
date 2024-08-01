@@ -24,20 +24,8 @@ Once installed, =poly-gams= will automatically activate for files with the =.gms
 
 *** Screenshot of code blocks with =poly-gams=
 
-#+BEGIN_COLUMNS
-
-#+begin_column
-#+CAPTION: GAMS Connect block with =poly-gams=
-[[file:images/connect_with_poly.png]]
-#+end_column
-
-#+begin_column
-#+CAPTION: GAMS Connect block without =poly-gams=
-[[file:images/connect_without_poly.png]]
-#+end_column
-
-#+END_COLUMNS
-
+| | With =poly-gams= | Without =poly-gams= |
+| Connect block | [[file:images/connect_with_poly.png]] |  [[file:images/connect_without_poly.png]] |
 
 *** Keybindings
 
