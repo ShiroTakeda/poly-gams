@@ -33,7 +33,7 @@ Once installed, =poly-gams= will automatically activate for files with the =.gms
 
 ** Customization
 
-Currently, =poly-gams= does not expose customizable variables. The package is designed to work out of the box for most use cases.
+Currently, =poly-gams= does not expose customizable variables. The package is designed to work out of the box for most use cases. Refer to =polymode=, =gams-mode=, =python-mode=, and =yaml-mode= for customization.
 
 ** Contributing
 
