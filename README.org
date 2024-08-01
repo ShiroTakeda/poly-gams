@@ -11,7 +11,7 @@
 
 This package is not yet available in MELPA, so you have to install it from source. This can be done as follows by adding the following to your =init.el= (with emacs >=29)
 #+begin_src emacs-lisp
-(unless (package-installed-p poly-gams)
+(unless (package-installed-p 'poly-gams)
   (package-vc-install
    '(poly-gams :url "https://github.com/ShiroTakeda/poly-gams")))
 (use-package poly-gams)
@@ -23,6 +23,21 @@ This package is not yet available in MELPA, so you have to install it from sourc
 Once installed, =poly-gams= will automatically activate for files with the =.gms= extension.
 
 *** Screenshot of code blocks with =poly-gams=
+
+#+BEGIN_COLUMNS
+
+#+begin_column
+#+CAPTION: GAMS Connect block with =poly-gams=
+[[file:images/connect_with_poly.png]]
+#+end_column
+
+#+begin_column
+#+CAPTION: GAMS Connect block without =poly-gams=
+[[file:images/connect_without_poly.png]]
+#+end_column
+
+#+END_COLUMNS
+
 
 *** Keybindings
 
