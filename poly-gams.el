@@ -68,7 +68,8 @@
     flag))
 
 (defun poly-gams--python-head-matcher-function (ahead)
-  "Function to match the start of Python embedded codes.  AHEAD specifies the direction to search."
+  "Function to match the start of Python embedded codes.
+AHEAD specifies the direction to search."
   (save-excursion
     (if (re-search-forward poly-gams-head-regexp nil t ahead)
         (let ((head (cons (match-beginning 0) (match-end 0)))
@@ -81,7 +82,8 @@
               (and (goto-char (cdr head)) (looking-at "python") head)))))))
 
 (defun poly-gams--python-tail-matcher-function (ahead)
-  "Function to match the end of Python embedded codes.  AHEAD specifies the direction to search."
+  "Function to match the end of Python embedded codes.
+AHEAD specifies the direction to search."
   (save-excursion
     (if (re-search-forward poly-gams-tail-regexp nil t ahead)
         (let ((head (cons (match-beginning 0) (match-end 0))))
@@ -92,7 +94,8 @@
                  head))))))
 
 (defun poly-gams--connect-head-matcher-function (ahead)
-  "Function to match the start of Connect embedded codes.  AHEAD specifies the direction to search."
+  "Function to match the start of Connect embedded codes.
+AHEAD specifies the direction to search."
   (save-excursion
     (if (re-search-forward poly-gams-head-regexp nil t ahead)
         (let ((head (cons (match-beginning 0) (match-end 0)))
@@ -105,7 +108,8 @@
               (and (goto-char (cdr head)) (looking-at "connect") head)))))))
 
 (defun poly-gams--connect-tail-matcher-function (ahead)
-  "Function to match the end of Connect embedded codes.  AHEAD specifies the direction to search."
+  "Function to match the end of Connect embedded codes.
+AHEAD specifies the direction to search."
   (save-excursion
     (if (re-search-forward poly-gams-tail-regexp nil t ahead)
         (let ((head (cons (match-beginning 0) (match-end 0))))
