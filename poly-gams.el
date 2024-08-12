@@ -1,4 +1,4 @@
-;;; poly-gams.el --- polymode for GAMS -*- lexical-binding: t -*-
+;;; poly-gams.el --- Polymode for GAMS -*- lexical-binding: t -*-
 ;;
 ;; Author: Shiro Takeda
 ;; Maintainer: Shiro Takeda
