@@ -1,5 +1,7 @@
 * poly-gams
 
+[[https://melpa.org/#/poly-gams][file:https://melpa.org/packages/poly-gams-badge.svg]]
+
 =poly-gams= is an Emacs package that provides polymode support for GAMS (General Algebraic Modeling System), allowing for embedded Python and YAML code blocks within GAMS files. This package leverages [[https://polymode.github.io/][polymode]] to enable seamless multi-mode editing.
 
 ** Features
@@ -9,12 +11,10 @@
 
 ** Installation
 
-This package is not yet available in MELPA, so you have to install it from source. This can be done as follows by adding the following to your =init.el= (with Emacs>=29)
+This package is available on MELPA. Using =use-package=, installation can be done by adding the following to your =init.el=
 #+begin_src emacs-lisp
-(unless (package-installed-p 'poly-gams)
-  (package-vc-install
-   '(poly-gams :url "https://github.com/ShiroTakeda/poly-gams")))
-(use-package poly-gams)
+(use-package poly-gams
+  :ensure t)
 #+end_src
 
 ** Usage
